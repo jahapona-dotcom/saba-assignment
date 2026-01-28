@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+     width: 80%;
+        margin: auto;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+}
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.header{
+    background-image: url(Banner-image.png);
+    text-align: center; 
+    color: white;
+    margin: 20px;
+    width: 85%;
+    height: 600px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+}
+section{
+    margin: 20px;
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    background-color: lightgrey;
+   padding: 2rem; 
+}
+.discount__off{
+    color: red;
+    font-size: 80px;
+    padding: 2rem;
+}
+.discount p{
+    font-size: 30px;
+    padding: 1rem;
+}
+.discount h2{
+    padding-bottom: 2rem;
+}
+.midnight{
+    background-image: url(Vectorrr.png);
+    width: 85%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.midnight__content{
+    color: white;
+    width: 60%;
+    text-align: justify;
+}
+.midnight__btn{
+    padding: 0.8rem 1.2rem;
+    border-radius: 5px;
+    border: none;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+}
+.midnight__image{
+    width: 90%;
+    height: 90%;
+    margin-left: 3rem;
+}
+span{
+    color: red;
+}
+.join{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+.red{
+    padding: .5rem;
+}
+.join__btn{
+    padding: 0.8rem 1.2rem;
+    border-radius: 5px;
+    border: none;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    margin: 3rem 0;
+}
+.comming{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: calc(5%);
+}
+.comming__one{
+    width: 30%;
+   text-align: justify;
+    
+    border-radius: 10px;
+   
+}
+.comming__two{
+    width: 400px;
+
+    border: 0.6rem solid red;
+    padding: 1rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.comming__three{
+    width: 30%;  
+    border-radius: 10px;
+    
+}
