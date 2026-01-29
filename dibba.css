@@ -1,181 +1,118 @@
 *{
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
-body{
-     width: 80%;
-        margin: auto;
-        box-sizing: border-box;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-}
-main{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.center{
+  display: flex;
+  justify-content: center;
     align-items: center;
+    margin:auto;
+    
+}
+.bc{
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .header{
-    background-image: url(Banner-image.png);
-    text-align: center; 
-    color: white;
-    margin: 20px;
-    width: 85%;
-    height: 600px;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 50px;
-}
-section{
-    margin: 20px;
-    width: 100%;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
- 
-    align-items: center;
-    font-size: 25px;
+    width: 90%;
+    height: 800px;
     
-   padding: 2rem; 
+    
+
+    margin-top: 30px;
+    background-image:
+    linear-gradient(
+      rgba(0,0,0,0.6),
+      rgba(0,0,0,0.6)
+    ),
+    url("Banner-image.png");
+  
+  color:white;
+  border-radius: 20px;
+text-align: center;
+}
+.header__content{
+  font-size: 70px; 
+}
+.discount{
+  padding: 2rem 0;
+  flex-direction: column;
 }
 .discount__off{
-    color: red;
-    font-size: 80px;
-    padding: 2rem;
+  color: red;
+  font-size: 90px;
+  padding: 3rem 0;
 }
 .discount p{
-    font-size: 30px;
-    padding: 1rem;
+  color: red;
+  font-size: 25px;
+  padding:1rem;
 }
 .discount h2{
-    padding-bottom: 2rem;
+  padding-bottom: 3rem;
+  font-size: 47px;
 }
 .midnight{
-    background-image: url(Vectorrr.png);
-    width: 85%;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+  width: 90%;
+  height: 600px;
+  border-radius: 20px;
+  background-image:linear-gradient(
+      rgba(0,0,0,0.6),
+      rgba(0,0,0,0.6)
+    ),
+    url("Vectorrr.png") ;
+   
+    justify-content: space-around;
+    color:white;
+
 }
 .midnight__content{
-    color: white;
-    width: 60%;
-    text-align: justify;
+  width: 52%;
+  font-size: 35px;
 }
 .midnight__btn{
-    padding: 0.8rem 1.2rem;
-    border-radius: 5px;
-    border: none;
-    background-color: red;
-    color: white;
-    cursor: pointer;
-    font-size: 20px;
+  background-color:white;
+  font-size: 25px;
+  padding: .6rem 1rem;
+  border-radius: 10px;
 }
-.midnight__image{
-    width: 90%;
-    height: 90%;
-    margin-left: 3rem;
-}
-span{
-    color: red;
+.midnight__content p{
+  font-size: 25px;
+  color:darkgrey;
+  text-align: justify;
 }
 .join{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
+  flex-direction: column;
+  padding: 4rem 0;
+  font-size: 40px;
 }
-.red{
-    padding: .5rem;
+span{
+  color:red;
+}
+
+.btn{
+  padding-bottom: 4rem;
 }
 .join__btn{
-    padding: 0.8rem 1.2rem;
-    border-radius: 5px;
-    border: none;
-    background-color: red;
-    color: white;
-    cursor: pointer;
-    font-size: 20px;
-    margin: 3rem 0;
+  padding: 0.6rem 1rem;
+  font-size: 25px;
+  border-radius: 10px;
+  background-color: red;
 }
 .comming{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    gap: calc(5%);
+  padding: 4rem 0rem;
+  width: 100%;
+  justify-content: space-around;
 }
-.comming__one{
-    width: 30%;
-   text-align: justify;
-    border-radius: 10px;
-     display: flex;
-    flex-direction: column;
-    gap:20px
-   
-}
-.comming__p{
-    color:red;
+.comming__one , .comming__three{
+  width: 30%;
+  text-align: justify;
+  font-size: 25px;
 }
 .comming__two{
-    width: 400px;
-    border: 0.6rem solid red;
-    padding: 1rem;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;  
-}
-.comming__three{
-    width: 30%;  
-    border-radius: 10px;
-    text-align: center;  
-     display: flex;
-    flex-direction: column;
-    gap:20px 
-}
-.holiday h1{
-    font-size: 80px;
-    margin: 1rem 0;
-}
-.holiday p{
-    font-size: 25px;
-    margin: 1rem 0;
-    text-align: center;
-    color: grey;
-}
-.triopic{
- 
-    width: 100%;
-    height: 800px;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-.pic__one{
-   position: absolute;
-   right: 100px;
-   top:200px;
-}
-.pic__two{
-    position: absolute;
-    bottom:0px;
-    left: 100px;
-}
-.pic__three{
-    position: absolute;
-    bottom:0;
+  padding: 1rem;
+  border:1rem solid red;
+  border-radius: 50%;
 }
