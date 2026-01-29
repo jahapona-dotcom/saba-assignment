@@ -22,28 +22,29 @@
     
 
     margin-top: 30px;
-    background-image:
-    linear-gradient(
-      rgba(0,0,0,0.6),
-      rgba(0,0,0,0.6)
-    ),
-    url("Banner-image.png");
-  
+    background-image: radial-gradient(
+      ellipse at top, 
+      rgba(0, 0, 0, 0.824) 0%, 
+      rgba(0,0,0,0.7) 20%,
+      rgba(0,0,0,0.1) 100% 
+    ), url("Banner-image.png");  
   color:white;
   border-radius: 20px;
 text-align: center;
 }
 .header__content{
+  padding-top:4rem;
   font-size: 70px; 
+  text-shadow: 4px 4px 2px black;
 }
 .discount{
-  padding: 2rem 0;
+  padding: 4rem 0;
   flex-direction: column;
 }
 .discount__off{
   color: red;
   font-size: 90px;
-  padding: 3rem 0;
+  padding: 1rem 0;
 }
 .discount p{
   color: red;
@@ -55,17 +56,15 @@ text-align: center;
   font-size: 47px;
 }
 .midnight{
+  padding: 4rem 0;
   width: 90%;
   height: 600px;
   border-radius: 20px;
-  background-image:linear-gradient(
-      rgba(0,0,0,0.6),
-      rgba(0,0,0,0.6)
-    ),
+  background-image: linear-gradient(to right, rgb(0, 0, 0), rgba(0,0,0,0)), 
     url("Vectorrr.png") ;
-   
     justify-content: space-around;
     color:white;
+    margin-bottom: 5rem;
 
 }
 .midnight__content{
@@ -77,6 +76,11 @@ text-align: center;
   font-size: 25px;
   padding: .6rem 1rem;
   border-radius: 10px;
+  transition: 0.3s;
+}
+.midnight__btn:hover{
+  background-color: red;
+  transform: scale(1.2);
 }
 .midnight__content p{
   font-size: 25px;
@@ -84,9 +88,17 @@ text-align: center;
   text-align: justify;
 }
 .join{
+   background:linear-gradient(
+      rgb(223, 168, 213),
+      rgba(255, 250, 254, 0.277)
+    );
+    width: 90%;
+  
+    border-radius: 20px;
   flex-direction: column;
   padding: 4rem 0;
   font-size: 40px;
+  margin:auto;
 }
 span{
   color:red;
@@ -100,8 +112,14 @@ span{
   font-size: 25px;
   border-radius: 10px;
   background-color: red;
+  transition: 0.3s;
+}
+.join__btn:hover{
+  background-color: darkred;
+  transform: scale(1.2);
 }
 .comming{
+  margin-top: 5rem;
   padding: 4rem 0rem;
   width: 100%;
   justify-content: space-around;
@@ -149,7 +167,6 @@ span{
 position:absolute;
 right: 10%;
 top: 15%;
-
 }
 .pic__two{
   position: absolute;
@@ -176,8 +193,7 @@ top: 15%;
 }
 .grid__content{
   margin: auto;
-  width: 90%;
- 
+  width: 90%; 
 display: flex;
 flex-direction: column;
 justify-content: center;
@@ -205,7 +221,13 @@ padding:2rem;
   gap:2rem;
 }
 .form{
-  background-color: lightcoral;
+  padding:3rem 0;
+  width: 90%;
+   background:linear-gradient(
+      rgb(232, 201, 225),
+      rgba(190, 184, 189, 0)
+    );
+    border-radius: 20px;
   flex-direction: column;
   text-align: center;
 }
@@ -224,14 +246,46 @@ padding:2rem;
 form{
   padding-bottom: 6rem;
 }
-input{
-  font-size: 30px;
-  border-radius: 30px;
+.form__email {
+  display: flex;
+  width: 450px;
+  margin: 2rem auto;
+  border-radius: 50px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.form__email input {
+ flex:1;
+  padding: 15px 20px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  border-radius: 50px 0 0 50px; 
+}
+
+.form__btn {
+  padding: 15px 25px;
+  background-color: red;
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 0 50px 50px 0; 
+  transition: background-color 0.3s;
+}
+.form__btn:hover{
+  background-color: darkred;
+  color:yellow;
+}
+::placeholder {
+  color: #ccc;
 }
 footer{
   background-color: black;
   padding:4rem;
   color: white;
+  margin-top: 5rem;
 }
 .footer__one,.footer__last{
   background-color: black;
@@ -244,9 +298,11 @@ footer{
   font-size: 25px;
 }
 .footer__logo{
-  text-align: center;
-  padding: 2rem 0;
-
+  padding: 3rem 0;
+  display: flex;
+  gap:10px;
+  justify-content: center;
+  align-items: center; 
 }
  
 
